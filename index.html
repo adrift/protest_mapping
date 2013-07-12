@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <title>CartoDB + Time</title>
+    <title>GDELT Protest Data Over Time</title>
     <link rel="shortcut icon" href="http://cartodb.com/favicon/favicon_32x32.ico" />
     <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="lib/cartodb.css">
@@ -64,16 +64,16 @@
             user:'johnb30',
             table:'protest_data',
             column:'date',
-            steps:750,
-            resolution:2,
+            steps:438,
+            resolution:4,
             cumulative:false,
             clock:true,
-            fps:20,
+            fps:10,
             fitbounds:false,
-            blendmode:'lighter',
+            blendmode:'xor',
             trails:true,
             point_type:'circle',
-            cellsize:1
+            cellsize:38.6
         }
 
     }
