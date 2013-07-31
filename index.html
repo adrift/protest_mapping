@@ -76,6 +76,13 @@
             cellsize:38.6
         }
 
+        var torque = null;
+        Torque(function (env) {
+            Torque.app = new env.app.Instance();
+            torque = new Torque.app.addLayer(map, TorqueOptions);
+            Torque.env = env;
+        });
+
     }
     </script>
 </head>
